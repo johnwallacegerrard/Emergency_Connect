@@ -13,6 +13,7 @@
 .nav__link:hover {
   border-bottom: 2px solid red;
   width: 40px;
+  transition:all .3s ease-out; 
 }
 .nav__link-home {
   margin-left: -200px;
