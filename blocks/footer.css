@@ -1,0 +1,32 @@
+.footer__social_content {
+  display: flex;
+  flex-direction:column; 
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  padding: 20px 0 ; 
+  background: #ccc; 
+}
+.footer__social_icons {
+  display:flex; 
+  padding: 20px; 
+  margin:0; 
+}
+.footer__social_icon { 
+      list-style: none;
+      text-decoration: none;
+      color: #333;
+      display:flex; 
+      flex-direction:column; 
+      align-items: center;
+      margin-right: 30px; 
+
+}
+.footer__social_icon i {
+  font-size: 30px;
+  margin-right: 5px;
+}
+.copyright { 
+      padding: 0; 
+      margin:0; 
+}
