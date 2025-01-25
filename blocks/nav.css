@@ -1,0 +1,60 @@
+.nav__links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10%;
+  left: 48%;
+}
+.nav__link {
+  padding: 10px;
+  font-size: 25px;
+  text-decoration: none;
+}
+.nav__link:hover {
+  border-bottom: 2px solid red;
+  width: 40px;
+}
+.nav__link-home {
+  margin-left: -200px;
+}
+.nav__link-about {
+  margin-left: -150px;
+}
+.nav__link-charities {
+  margin-left: -100px;
+}
+.nav__link-protocols {
+  margin-left: -10px;
+}
+.nav__link-waytohelp {
+  align-self: self-end;
+  margin-top: 40px;
+  margin-right: -130px;
+}
+.nav__link-waytohelp-arrow-blur {
+  animation: animate 1.3s ease-in-out infinite;
+}
+.nav__link-waytohelp-arrow:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.nav li {
+  list-style: none;
+}
+.nav li a {
+  text-decoration: none;
+  color:#333; 
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
