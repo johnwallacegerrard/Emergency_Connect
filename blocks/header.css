@@ -1,8 +1,13 @@
-.header{ 
-      background:url('../images/pexels-pixabay-255527.jpg')no-repeat center center/cover; 
-      height: 100vh; 
-      position:relative; 
+.header {
+  background: url("../images/headerbg.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  z-index: 1000;
+  font-family: "Stardos Stencil", serif;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-img{ 
-      width: 100%; 
+img {
+  width: 100%;
+  object-fit: contain;
 }
