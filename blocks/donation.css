@@ -1,10 +1,12 @@
 .donation {
   padding: 100px 80px 215px;
+  background-color: #ccc;
 }
 
 .donation__title {
   text-align: center;
   font-size: 50px;
+  margin-bottom: 40px;
 }
 
 .donation__cards {
@@ -26,7 +28,7 @@
 
 .donation__caption {
   font-size: xx-large;
-  line-height: 40px;
+  line-height: 48px;
   text-align: center;
   margin: 0;
 }
