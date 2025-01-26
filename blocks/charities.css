@@ -1,3 +1,11 @@
+.charities__title {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 400px;
+  font-size: 72px;
+  line-height: 1;
+  text-align: center;
+}
+
 .charities__cards {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -26,6 +34,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.charities__card-text {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 1;
+  padding: 10px 5px;
 }
 
 .charities__card-image {
