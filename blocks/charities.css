@@ -1,0 +1,33 @@
+.charities__cards {
+}
+
+.charities__cards-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-template-rows: 250px 250px;
+  grid-gap: 50px 50px;
+  justify-content: center;
+}
+
+.charities__card-template {
+}
+
+.charities__card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.charities__card-text {
+  justify-content: center;
+}
+
+.charities__card-title {
+  justify-content: center;
+}
+
+.charities__card-image {
+  max-height: 150px;
+}
