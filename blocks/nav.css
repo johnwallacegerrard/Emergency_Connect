@@ -1,16 +1,50 @@
-.nav__title {
-  text-align: center;
+.nav__logo_title {
   color: red;
+  font-size: 25px;
+  margin: 0;
+  padding: 20px;
 }
-.top-background {
+.nav__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: #fff;
+}
+.nav__logo_image {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  margin-right: 10px;
+  opacity: 0.8;
+}
+.header__footer {
+  padding: 5px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  opacity: 0.1;
+  right: 30px;
+  top: 20px;
+  text-transform: lowercase;
+}
+.header__footer:hover {
+  transition: all 0.3s ease-in-out;
+}
+.header__fotter:hover {
+  width: 450px;
+}
+
+.header__footer_paragraph {
+  float: left;
+  padding-top: 20px;
+  width: 240px;
+  display: none;
+  font-size: 10px;
+}
+.header__footer:hover .header__footer_paragraph {
+  display: block;
 }
 
 .nav__links {
@@ -20,12 +54,11 @@
   justify-content: center;
   position: absolute;
   top: 13%;
-  left: 37%;
+  left: 39%;
   z-index: 100;
 }
-.nav li a {
+.nav__link a {
   text-decoration: none;
-  /* color: red; */
   color: #333;
 }
 .nav li {
@@ -37,43 +70,28 @@
   text-decoration: none;
 }
 .nav__link:hover {
-  border: 1px solid red;
-  padding: 5px;
-  transition: all 0.3s ease-out;
-}
-
-/* Navigation hover */
-.nav__link-home:hover {
-  background: rgb(231, 74, 74);
-  max-width: 85px;
-  width: 100%;
+  padding: 10px;
   transition: all 0.5s ease-out;
-}
-
-.nav__link-about:hover {
   background: rgb(231, 74, 74);
-
-  max-width: 95px;
-  width: 100%;
-  transition: all 0.5s ease-out;
+  border-radius: 10px;
 }
-.nav__link-charities:hover {
-  background: rgb(231, 74, 74);
+.nav__link a:hover {
   color: #fff;
-  max-width: 145px;
-  width: 100%;
-  transition: all 0.5s ease-out;
 }
-.nav__link-protocols:hover {
-  background: rgb(231, 74, 74);
-  color: #fff;
-  transition: all 0.5s ease-out;
+/* Navigation  */
+.nav__link-home {
+  margin-left: -350px;
 }
-.nav__link-waytohelp:hover {
-  background: rgb(231, 74, 74);
-  color: #fff;
-  max-width: 230px;
-  /* max-width: 300px; */
-  width: 100%;
-  transition: all 0.5s ease-out;
+.nav__link-about {
+  margin-left: -240px;
+}
+.nav__link-charities {
+  margin-left: -50px;
+}
+.nav__link-protocols {
+  margin-right: -180px;
+}
+.nav__link-waytohelp {
+  align-self: self-end;
+  margin-right: -300px;
 }
