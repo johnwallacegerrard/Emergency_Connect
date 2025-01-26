@@ -6,7 +6,7 @@
     <meta name="author" content="Syntax Symphony, Kira, Jmik, Jose, Levi" />
     <link rel="stylesheet" href="vendor/normalize.css" />
     <link rel="stylesheet" href="pages/index.css" />
-    <title>Emergency Conntect</title>
+    <title>Emergency Connect</title>
   </head>
   <body class="page">
     <header class="header">
@@ -31,8 +31,18 @@
       <section id="Waystohelp">
         <!-- Jose -->
       </section>
-      <section id="charities">
+      <section id="charities" class="charities__cards">
         <!-- Kira -->
+        <ul class="charities__cards-list">
+          <template id="charities__card-template">
+            <li class="charities__card">
+              <div class="charities__card-text">
+                <h2 class="charities__card-title"></h2>
+              </div>
+              <img src="" class="charities__card-image" alt="" />
+            </li>
+          </template>
+        </ul>
       </section>
       <section id="protocols">
         <!-- Levi -->
@@ -60,6 +70,6 @@
         <p>&copy; : Syntax Symphony</p>
       </div>
     </footer>
-    <script src="script/index.js"></script>
+    <script src="./script/index.js"></script>
   </body>
 </html>
