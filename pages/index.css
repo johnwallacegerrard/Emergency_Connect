@@ -1,3 +1,7 @@
 @import url(../vendor/normalize.css);
-@import url("../blocks/footer.css");
 @import url(../blocks/charities.css);
+@import url("../blocks/donation.css");
+@import url("../blocks/header.css");
+@import url("../blocks/nav.css");
+@import url("../blocks/page.css");
+@import url("../blocks/footer.css");
