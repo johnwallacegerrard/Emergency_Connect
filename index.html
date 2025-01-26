@@ -8,6 +8,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="vendor/normalize.css" />
     <link rel="stylesheet" href="pages/index.css" />
     <title>Emergency Connect</title>
@@ -16,28 +22,35 @@
     <header class="header">
       <!-- Jmik -->
       <nav class="nav">
+        <h1 class="nav__title">Emergency Connect</h1>
         <ul class="nav__links">
-          <li class="nav__link nav__link-home"><a href="#home">Home</a></li>
+          <li class="nav__link nav__link-home">
+            <a class="nav__link_btn" href="#home">Home</a>
+          </li>
 
-          <li class="nav__link nav__link-about"><a href="#about">About</a></li>
+          <li class="nav__link nav__link-about">
+            <a class="nav__link_btn" href="#about">About</a>
+          </li>
 
           <li class="nav__link nav__link-charities">
-            <a href="#charities">Charities</a>
+            <a class="nav__link_btn" href="#charities">Charities</a>
           </li>
 
           <li class="nav__link nav__link-protocols">
-            <a href="#protocols">Protocols</a>
+            <a class="nav__link_btn" href="#protocols">Protocols</a>
           </li>
           <li
             class="nav__link nav__link-waytohelp nav__link-waytohelp-arrow nav__link-waytohelp-arrow-blur"
           >
-            <a href="#waystohelp"
-              >Ways to help
-              <i class="fas fa-arrow-right"></i>
+            <a class="nav__link_btn" href="#waystohelp"
+              >Ways To Help
+              <i class="fas fa-arrow-right"><p></p></i>
             </a>
           </li>
         </ul>
       </nav>
+      <img src="images/navbg.jpg" alt="" class="top-background" />
+      <img src="images/help.jpg" alt="" class="help">
     </header>
     <main class="container">
       <section id="about">
@@ -59,7 +72,7 @@
         <!-- what does emergency connect do?  -->
         <!-- The goal of emergency connect -->
       </section>
-      <section class="donation" id="Waystohelp">
+      <section class="donation" id="waystohelp">
         <!-- Jose -->
         <h2 class="donation__title">Helping Made Easy!</h2>
         <ul class="donation__cards">
@@ -81,6 +94,83 @@
             </button>
           </li>
         </ul>
+        <div class="modal" id="donation-modal">
+          <div class="modal__container">
+            <button type="button" class="modal__close-btn">
+              <img src="./images/close-icon.svg" alt="close icon" />
+            </button>
+            <h2 class="modal__title">Monetary Donation</h2>
+
+            <form class="modal__form">
+              <label for="first-name" class="modal__label"
+                >First Name *
+                <input
+                  type="text"
+                  class="modal__input"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="John"
+                  required
+                />
+              </label>
+              <label for="last-name" class="modal__label"
+                >Last Name *
+                <input
+                  type="text"
+                  class="modal__input"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Doe"
+                  required
+                />
+              </label>
+              <label for="email" class="modal__label"
+                >Your email *
+                <input
+                  type="email"
+                  class="modal__input"
+                  id="email"
+                  name="email"
+                  placeholder="email@email.com"
+                  required
+                />
+              </label>
+              <label for="phone-numbers" class="modal__label"
+                >Phone Number
+                <input
+                  type="tel"
+                  class="modal__input"
+                  id="phone-number"
+                  name="phone-number"
+                  placeholder="123-456-7890"
+                />
+              </label>
+              <label for="address" class="modal__label"
+                >Address
+                <input
+                  type="text"
+                  class="modal__input"
+                  id="address"
+                  name="address"
+                  placeholder="123 Donation Blvd."
+                />
+              </label>
+              <label for="donation-amount" class="modal__label"
+                >Donation Amount *
+                <input
+                  class="modal__input"
+                  id="donation-amount"
+                  name="price"
+                  type="number"
+                  step="0.01"
+                  min="0"
+                  placeholder="Enter amount"
+                />
+              </label>
+              <button type="submit" class="modal__button">Submit</button>
+            </form>
+          </div>
+        </div>
       </section>
 
       <section class="charities" id="charities" class="charities__cards">
