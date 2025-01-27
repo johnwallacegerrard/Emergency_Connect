@@ -142,13 +142,6 @@ function getCardElement(data) {
   cardImageElement.src = data.link;
   cardImageElement.alt = data.name;
 
-  cardImageElement.addEventListener("click", () => {
-    openModal(previewModal);
-    previewModalImage.src = data.link;
-    previewModalImage.alt = data.name;
-    previewModalCaption.textContent = data.name;
-  });
-
   return cardElement;
 }
 
@@ -159,4 +152,21 @@ function renderCard(item, method = "prepend") {
 
 charitiesCards.forEach((item) => {
   renderCard(item, "append");
+});
+
+//functions for Charities modals opening and closing//
+const charitiesModal = document.querySelector("#charities__modal");
+const charitiesModalImage = document.querySelector(".charities__modal-image");
+const charitiesModalCaption = document.querySelector(
+  ".charities__modal-caption"
+);
+const charitiesModalCloseBtn = document.querySelector(
+  ".charities__modal-close-btn"
+);
+
+cardImageElement.addEventListener("click", () => {
+  openModal(previewModal);
+  previewModalImage.src = data.link;
+  previewModalImage.alt = data.name;
+  previewModalCaption.textContent = data.name;
 });

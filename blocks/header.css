@@ -3,8 +3,28 @@
   height: 100vh;
   width: 100%;
   position: relative;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   z-index: 200;
+}
+.syntax {
+  position: absolute;
+  top: 0;
+  font-size: 20px;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+  z-index: 1;
+}
+.header__logo_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
 }
 .header__footer {
   padding: 5px;
@@ -16,6 +36,7 @@
   right: 30px;
   top: 20px;
   text-transform: lowercase;
+  z-index: 1;
 }
 .header__footer:hover {
   transition: all 0.3s ease-in-out;
@@ -25,9 +46,10 @@
 
 .header__footer_paragraph {
   float: left;
-  padding-top: 5px;
-  width: 240px;
+  width: 280px;
   display: none;
+  padding: 20px;
+  margin: 0;
 }
 .header__footer:hover .header__footer_paragraph {
   display: block;
