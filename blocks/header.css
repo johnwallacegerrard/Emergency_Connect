@@ -6,6 +6,16 @@
   text-transform: uppercase;
   z-index: 200;
 }
+.header__logo_top{ 
+  position:absolute; 
+  top:0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  object-fit: cover;
+  width: 100%; 
+  opacity: .2; 
+}
 .header__footer {
   padding: 5px;
   border: solid 1px #ccc;
@@ -16,6 +26,7 @@
   right: 30px;
   top: 20px;
   text-transform: lowercase;
+  z-index: 1;
 }
 .header__footer:hover {
   transition: all 0.3s ease-in-out;
@@ -25,9 +36,10 @@
 
 .header__footer_paragraph {
   float: left;
-  padding-top: 5px;
-  width: 240px;
+  width: 280px;
   display: none;
+  padding: 20px; 
+  margin:0;   
 }
 .header__footer:hover .header__footer_paragraph {
   display: block;
