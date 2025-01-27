@@ -75,81 +75,77 @@
         <!-- Jose -->
         <h2 class="donation__title">Helping Made Easy!</h2>
         <ul class="donation__cards">
-          <li class="donation__card">
+          <li class="donation__card" id="cash-donation">
             <p class="donation__caption">
               You can send a donation as your way to help!
             </p>
-            <button type="submit" class="donation__button">
-              Setup Donation
-            </button>
+            <button class="donation__button">Setup Donation</button>
           </li>
-          <li class="donation__card">
+          <li class="donation__card" id="volunteer-work">
             <p class="donation__caption">
-              You can sign up to voulnteer and help with things like food and
+              You can sign up to volunteer and help with things like food and
               water distribution and cleanup/debris removal.
             </p>
-            <button type="submit" class="donation__button">
-              Schedule Here
-            </button>
+            <button class="donation__button">Schedule Here</button>
           </li>
         </ul>
-        <div class="modal" id="donation-modal">
+        <div class="modal" id="cash-donation-modal">
           <div class="modal__container">
             <button type="button" class="modal__close-btn">
               <img src="./images/close-icon.svg" alt="close icon" />
             </button>
             <h2 class="modal__title">Monetary Donation</h2>
 
-            <form class="modal__form">
-              <label for="first-name" class="modal__label"
+            <form class="modal__form" id="donation-form">
+              <label for="donation-first-name" class="modal__label"
                 >First Name *
                 <input
                   type="text"
                   class="modal__input"
-                  id="first-name"
+                  id="donation-first-name"
                   name="first-name"
                   placeholder="John"
                   required
                 />
               </label>
-              <label for="last-name" class="modal__label"
+              <label for="donation-last-name" class="modal__label"
                 >Last Name *
                 <input
                   type="text"
                   class="modal__input"
-                  id="last-name"
+                  id="donation-last-name"
                   name="last-name"
                   placeholder="Doe"
                   required
                 />
               </label>
-              <label for="email" class="modal__label"
+              <label for="donation-email" class="modal__label"
                 >Your email *
                 <input
                   type="email"
                   class="modal__input"
-                  id="email"
+                  id="donation-email"
                   name="email"
                   placeholder="email@email.com"
                   required
                 />
               </label>
-              <label for="phone-numbers" class="modal__label"
+              <label for="donation-phone-number" class="modal__label"
                 >Phone Number
                 <input
                   type="tel"
                   class="modal__input"
-                  id="phone-number"
+                  id="donation-phone-number"
                   name="phone-number"
                   placeholder="123-456-7890"
                 />
               </label>
-              <label for="address" class="modal__label"
+              <label for="donation-address" class="modal__label"
                 >Address
                 <input
                   type="text"
                   class="modal__input"
-                  id="address"
+                  id="donation-address"
                   name="address"
                   placeholder="123 Donation Blvd."
                 />
@@ -164,6 +160,95 @@
                   step="0.01"
                   min="0"
                   placeholder="Enter amount"
+                  required
+                />
+              </label>
+              <button type="submit" class="modal__button">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="modal" id="volunteer-work-modal">
+          <div class="modal__container">
+            <button type="button" class="modal__close-btn">
+              <img src="./images/close-icon.svg" alt="close icon" />
+            </button>
+            <h2 class="modal__title">Disaster Relief Volunteer</h2>
+
+            <form class="modal__form" id="volunteer-form">
+              <label for="volunteer-first-name" class="modal__label"
+                >First Name *
+                <input
+                  type="text"
+                  class="modal__input"
+                  id="volunteer-first-name"
+                  name="first-name"
+                  placeholder="John"
+                  required
+                />
+              </label>
+              <label for="volunteer-last-name" class="modal__label"
+                >Last Name *
+                <input
+                  type="text"
+                  class="modal__input"
+                  id="volunteer-last-name"
+                  name="last-name"
+                  placeholder="Doe"
+                  required
+                />
+              </label>
+              <label for="volunteer-age" class="modal__label"
+                >Age *
+                <input
+                  type="number"
+                  min="16"
+                  max="80"
+                  class="modal__input"
+                  id="volunteer-age"
+                  name="age"
+                  placeholder="From 16 to 80"
+                  required
+                />
+              </label>
+              <label for="volunteer-email" class="modal__label"
+                >Your email *
+                <input
+                  type="email"
+                  class="modal__input"
+                  id="volunteer-email"
+                  name="email"
+                  placeholder="email@email.com"
+                  required
+                />
+              </label>
+              <label for="volunteer-phone-number" class="modal__label"
+                >Phone Number
+                <input
+                  type="tel"
+                  class="modal__input"
+                  id="volunteer-phone-number"
+                  name="phone-number"
+                  placeholder="123-456-7890"
+                />
+              </label>
+              <label for="volunteer-address" class="modal__label"
+                >Address
+                <input
+                  type="text"
+                  class="modal__input"
+                  id="volunteer-address"
+                  name="address"
+                  placeholder="123 Donation Blvd."
+                />
+              </label>
+              <label for="volunteer-availability" class="modal__label">
+                Availability
+                <input
+                  type="text"
+                  class="modal__input"
+                  id="volunteer-availability"
+                  name="availability"
+                  placeholder="e.g., Weekends only"
                 />
               </label>
               <button type="submit" class="modal__button">Submit</button>
