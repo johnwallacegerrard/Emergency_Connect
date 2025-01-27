@@ -45,3 +45,7 @@
   margin: 20px auto;
   font-size: 18px;
 }
+
+.prep__list li {
+  margin: 16px 10px 8px;
+}
