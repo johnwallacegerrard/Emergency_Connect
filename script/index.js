@@ -2,24 +2,31 @@ const charitiesCards = [
   {
     name: "American Red Cross",
     link: "images/redcross.svg",
+    text: "",
   },
   {
     name: "The Salvation Army",
     link: "images/salvation.svg",
+    text: "",
   },
   {
     name: "Team Rubicon",
     link: "images/rubicon.svg",
+    text: "",
   },
   {
     name: "Doctors Without Borders",
     link: "images/doctors.svg",
+    text: "",
   },
 ];
 
 //variables for cards on Charities section//
 const cardTemplate = document.querySelector("#charities__card-template");
 const cardsList = document.querySelector(".charities__cards-list");
+
+const charitiesImageBtn = document.querySelector(".charities__image-btn");
+const charitiesModal = document.querySelector("#charities-modal");
 
 //variables for donation section
 const cashDonation = document.querySelector("#cash-donation");
@@ -125,18 +132,6 @@ charitiesCards.forEach((item) => {
 });
 
 //functions for Charities modals opening and closing//
-const charitiesModal = document.querySelector("#charities__modal");
-const charitiesModalImage = document.querySelector(".charities__modal-image");
-const charitiesModalCaption = document.querySelector(
-  ".charities__modal-caption"
-);
-const charitiesModalCloseBtn = document.querySelector(
-  ".charities__modal-close-btn"
-);
-
-cardImageElement.addEventListener("click", () => {
-  openModal(previewModal);
-  previewModalImage.src = data.link;
-  previewModalImage.alt = data.name;
-  previewModalCaption.textContent = data.name;
+charitiesImageBtn.addEventListener("click", () => {
+  openModal(charitiesModal);
 });

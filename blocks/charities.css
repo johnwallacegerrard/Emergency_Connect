@@ -52,3 +52,77 @@
 .charities__card-image:hover {
   opacity: 0.4;
 }
+
+.charities__image-btn {
+  border: none;
+  background-color: #ffffff;
+}
+
+.charities__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.charities__modal-container {
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 60%;
+  max-height: 50%;
+}
+
+.charities__modal-section {
+  padding: 10px 0 0 20px;
+}
+
+.charities__modal-title {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.charities__modal-image {
+  max-width: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.charities__modal-caption {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  color: black;
+  margin: 0;
+  padding: 10px 10px;
+}
+
+.charities__modal-close-btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  opacity: 40%;
+  padding: 0;
+  top: 10px;
+  right: 20px;
+}
+
+.charities__modal-close-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+}

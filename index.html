@@ -62,7 +62,11 @@
           <li>Find a strong building</li>
         </ul>
       </div>
-      <img src="images/headerlogo2.jpg" alt="group of people" class="header__logo_top" />
+      <img
+        src="images/headerlogo2.jpg"
+        alt="group of people"
+        class="header__logo_top"
+      />
     </header>
 
     <!-- Main  -->
@@ -281,20 +285,44 @@
               <div class="charities__card-text">
                 <h3 class="charities__card-title"></h3>
               </div>
-              <img src="" class="charities__card-image" alt="" />
+              <button
+                class="charities__image-btn"
+                id="charities__image-btn"
+                type="button"
+              >
+                <img src="" class="charities__card-image" alt="" />
+              </button>
             </li>
           </template>
         </ul>
 
-        <div class="charities__modal" id="charities__modal">
+        <div class="charities__modal" id="charities-modal">
           <div class="charities__modal-container">
             <button
               class="charities__modal-close-btn"
               id="charities__modal-close-btn"
               type="button"
-            ></button>
-            <img class="charities__modal-image" src="" alt="" />
-            <p class="charities__modal-caption"></p>
+            >
+              <img src="./images/close-icon.svg" alt="close icon" />
+            </button>
+            <div class="charities__modal-section">
+              <h2 class="charities__modal-title">Doctors Without Borders</h2>
+              <img
+                class="charities__modal-image"
+                src="./images/doctors.svg"
+                alt=""
+              />
+            </div>
+
+            <p class="charities__modal-caption">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              tempore temporibus fugiat est inventore doloribus quam reiciendis
+              itaque provident nisi dolore reprehenderit, veritatis quisquam
+              soluta exercitationem nemo fuga asperiores quaerat possimus
+              dolores pariatur iusto suscipit laborum? Necessitatibus alias, vel
+              autem suscipit, unde perspiciatis, debitis fugiat consectetur odio
+              quia exercitationem beatae.
+            </p>
           </div>
         </div>
       </section>
