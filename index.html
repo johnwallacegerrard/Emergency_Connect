@@ -64,7 +64,9 @@
         </div>
       </nav>
     </header>
-
+    <div class="thank-you-message" id="thankYouMessage" hidden>
+      Thank you for your donation!
+    </div>
     <!-- Main  -->
     <main class="container">
       <section id="about">
@@ -111,7 +113,7 @@
             </button>
             <h2 class="modal__title">Monetary Donation</h2>
 
-            <form class="modal__form" id="donation-form">
+            <form class="modal__form" id="donation-form" novalidate>
               <label for="donation-first-name" class="modal__label"
                 >First Name *
                 <input
@@ -120,8 +122,13 @@
                   id="donation-first-name"
                   name="first-name"
                   placeholder="John"
+                  minlength="2"
                   required
                 />
+                <span
+                  class="modal__error"
+                  id="donation-first-name-error"
+                ></span>
               </label>
               <label for="donation-last-name" class="modal__label"
                 >Last Name *
@@ -131,8 +138,10 @@
                   id="donation-last-name"
                   name="last-name"
                   placeholder="Doe"
+                  minlength="2"
                   required
                 />
+                <span class="modal__error" id="donation-last-name-error"></span>
               </label>
               <label for="donation-email" class="modal__label"
                 >Your email *
@@ -144,6 +153,7 @@
                   placeholder="email@email.com"
                   required
                 />
+                <span class="modal__error" id="donation-email-error"></span>
               </label>
               <label for="donation-phone-number" class="modal__label"
                 >Phone Number
@@ -154,6 +164,10 @@
                   name="phone-number"
                   placeholder="123-456-7890"
                 />
+                <span
+                  class="modal__error"
+                  id="donation-phone-number-error"
+                ></span>
               </label>
               <label for="donation-address" class="modal__label"
                 >Address
@@ -164,6 +178,7 @@
                   name="address"
                   placeholder="123 Donation Blvd."
                 />
+                <span class="modal__error" id="donation-address-error"></span>
               </label>
               <label for="donation-amount" class="modal__label"
                 >Donation Amount *
@@ -173,10 +188,11 @@
                   name="price"
                   type="number"
                   step="0.01"
-                  min="0"
+                  min="1"
                   placeholder="Enter amount"
                   required
                 />
+                <span class="modal__error" id="donation-amount-error"></span>
               </label>
               <button type="submit" class="modal__button">Submit</button>
             </form>
@@ -189,7 +205,7 @@
             </button>
             <h2 class="modal__title">Disaster Relief Volunteer</h2>
 
-            <form class="modal__form" id="volunteer-form">
+            <form class="modal__form" id="volunteer-form" novalidate>
               <label for="volunteer-first-name" class="modal__label"
                 >First Name *
                 <input
@@ -198,8 +214,13 @@
                   id="volunteer-first-name"
                   name="first-name"
                   placeholder="John"
+                  minlength="2"
                   required
                 />
+                <span
+                  class="modal__error"
+                  id="volunteer-first-name-error"
+                ></span>
               </label>
               <label for="volunteer-last-name" class="modal__label"
                 >Last Name *
@@ -209,8 +230,13 @@
                   id="volunteer-last-name"
                   name="last-name"
                   placeholder="Doe"
+                  minlength="2"
                   required
                 />
+                <span
+                  class="modal__error"
+                  id="volunteer-last-name-error"
+                ></span>
               </label>
               <label for="volunteer-age" class="modal__label"
                 >Age *
@@ -224,6 +250,7 @@
                   placeholder="From 16 to 80"
                   required
                 />
+                <span class="modal__error" id="volunteer-age-error"></span>
               </label>
               <label for="volunteer-email" class="modal__label"
                 >Your email *
@@ -235,6 +262,7 @@
                   placeholder="email@email.com"
                   required
                 />
+                <span class="modal__error" id="volunteer-email-error"></span>
               </label>
               <label for="volunteer-phone-number" class="modal__label"
                 >Phone Number
@@ -245,6 +273,10 @@
                   name="phone-number"
                   placeholder="123-456-7890"
                 />
+                <span
+                  class="modal__error"
+                  id="volunteer-phone-number-error"
+                ></span>
               </label>
               <label for="volunteer-address" class="modal__label"
                 >Address
@@ -255,16 +287,23 @@
                   name="address"
                   placeholder="123 Donation Blvd."
                 />
+                <span class="modal__error" id="volunteer-address-error"></span>
               </label>
               <label for="volunteer-availability" class="modal__label">
-                Availability
+                Availability *
                 <input
                   type="text"
                   class="modal__input"
                   id="volunteer-availability"
                   name="availability"
                   placeholder="e.g., Weekends only"
+                  required
+                  minlength="5"
                 />
+                <span
+                  class="modal__error"
+                  id="volunteer-availability-error"
+                ></span>
               </label>
               <button type="submit" class="modal__button">Submit</button>
             </form>
@@ -436,6 +475,7 @@
         <p class="copyright">&copy; Syntax Symphony</p>
       </div>
     </footer>
-    <script src="./script/index.js"></script>
+    <script defer src="./script/validator.js"></script>
+    <script defer src="./script/index.js"></script>
   </body>
 </html>
