@@ -33,9 +33,9 @@
 .modal__title {
   max-width: 630px;
   padding: 0;
-  margin: 0 0 32px;
+  margin: 0 0 24px;
   font-size: 32px;
-  line-height: 32px;
+  line-height: 30px;
   font-family: "Inter", "Arial", sans-serif;
   font-weight: 500;
   color: rgba(33, 33, 33, 1);
@@ -50,9 +50,9 @@
   flex-direction: column;
   gap: 8px;
   padding: 0;
-  margin-bottom: 24px;
-  font-size: 24px;
-  line-height: 10px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 8px;
   font-family: "Inter", "Arial", sans-serif;
   font-weight: 500;
   color: rgba(33, 33, 33, 1);
@@ -112,13 +112,6 @@
   opacity: 50%;
 }
 
-.modal__submit-btn:disabled,
-.modal__submit-btn:disabled:hover {
-  background-color: rgba(33, 33, 33, 1);
-  cursor: default;
-  opacity: 50%;
-}
-
 .modal__close-btn {
   width: 40px;
   height: 40px;
@@ -143,15 +136,22 @@
   width: 100%;
   padding: 20px 0;
   border: none;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   font-family: "Inter", "Arial", sans-serif;
   font-weight: 500;
   font-size: 24px;
-  line-height: 20px;
+  line-height: 16px;
   color: #fff;
 }
 
 .modal__button:hover {
   background-color: #3f96f3;
   cursor: pointer;
+}
+
+.modal__button:disabled,
+.modal__button:disabled:hover {
+  background-color: rgba(33, 33, 33, 1);
+  cursor: default;
+  opacity: 50%;
 }

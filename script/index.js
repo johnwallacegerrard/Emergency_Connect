@@ -67,6 +67,25 @@ closeButtons.forEach((button) => {
   button.addEventListener("click", () => closeModal(popup));
 });
 
+// Grab the thank-you div from the DOM
+const thankYouMessage = document.getElementById("thankYouMessage");
+
+// Reusable function to display and fade out the message
+function showThankYouMessage(message) {
+  thankYouMessage.textContent = message;
+
+  thankYouMessage.hidden = false;
+
+  setTimeout(() => {
+    thankYouMessage.classList.add("fade-out");
+  }, 2000);
+
+  setTimeout(() => {
+    thankYouMessage.hidden = true;
+    thankYouMessage.classList.remove("fade-out");
+  }, 4000);
+}
+
 function handleDonationFormSubmit(evt) {
   evt.preventDefault();
 
@@ -76,8 +95,13 @@ function handleDonationFormSubmit(evt) {
   const phoneNumber = evt.target["phone-number"].value;
   const address = evt.target["address"].value;
   const donationAmount = evt.target["price"].value;
+
+  const buttonElement = evt.target.querySelector(".modal__button");
+  disableButton(buttonElement, settings);
+
   closeModal(cashDonationModal);
   evt.target.reset();
+  showThankYouMessage("Thank you for your donation!");
 }
 
 function handleVolunteerFormSubmit(evt) {
@@ -90,17 +114,23 @@ function handleVolunteerFormSubmit(evt) {
   const phoneNumber = evt.target["phone-number"].value;
   const address = evt.target["address"].value;
   const availability = evt.target["availability"].value;
+
+  const buttonElement = evt.target.querySelector(".modal__button");
+  disableButton(buttonElement, settings);
+
   closeModal(volunteerWorkModal);
   evt.target.reset();
+  showThankYouMessage("Thank you for volunteering!");
 }
 
 //functions to bring up modals
 cashDonationBtn.addEventListener("click", () => {
-  // resetValidation(editProfileForm, settings);
+  resetValidation(donationForm, settings);
   openModal(cashDonationModal);
 });
 
 volunteerWorkBtn.addEventListener("click", () => {
+  resetValidation(volunteerForm, settings);
   openModal(volunteerWorkModal);
 });
 

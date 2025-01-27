@@ -1,0 +1,18 @@
+.thank-you-message {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  opacity: 1;
+  transition: opacity 4s;
+  z-index: 9999;
+}
+
+.thank-you-message.fade-out {
+  opacity: 0;
+}
