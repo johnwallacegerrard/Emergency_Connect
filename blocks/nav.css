@@ -1,3 +1,6 @@
+.nav {
+  border-bottom: 1px solid red;
+}
 .nav__logo_title {
   color: red;
   font-size: 25px;
@@ -16,35 +19,6 @@
   width: 50px;
   object-fit: contain;
   margin-right: 10px;
-  opacity: 0.8;
-}
-.header__footer {
-  padding: 5px;
-  border: solid 1px #ccc;
-  border-radius: 5px;
-  overflow: hidden;
-  cursor: pointer;
-  position: absolute;
-  right: 30px;
-  top: 20px;
-  text-transform: lowercase;
-}
-.header__footer:hover {
-  transition: all 0.3s ease-in-out;
-}
-.header__fotter:hover {
-  width: 450px;
-}
-
-.header__footer_paragraph {
-  float: left;
-  padding-top: 20px;
-  width: 240px;
-  display: none;
-  font-size: 10px;
-}
-.header__footer:hover .header__footer_paragraph {
-  display: block;
 }
 
 .nav__links {
@@ -59,7 +33,7 @@
 }
 .nav__link a {
   text-decoration: none;
-  color: #333;
+  color: #000;
 }
 .nav li {
   list-style: none;
@@ -67,6 +41,7 @@
 .nav__link {
   padding: 15px;
   font-size: 25px;
+  font-weight: 500;
   text-decoration: none;
 }
 .nav__link:hover {
