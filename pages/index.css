@@ -1,6 +1,7 @@
 @import url(../vendor/normalize.css);
 @import url("../vendor/fonts.css");
 @import url("../blocks/about.css");
+@import url("../blocks/thank-you.css");
 @import url("../blocks/charities.css");
 @import url("../blocks/donation.css");
 @import url("../blocks/header.css");
