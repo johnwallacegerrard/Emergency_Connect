@@ -1,13 +1,10 @@
 .header {
-  background: url("../images/headerbg.jpg") no-repeat center center/cover;
+  background: url(../images/headerbg.jpg) no-repeat center center/cover; 
   height: 100vh;
-  position: relative;
-  z-index: 1000;
-  font-family: "Stardos Stencil", serif;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-img {
   width: 100%;
-  object-fit: contain;
+  position: relative;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  z-index: 200;
 }
