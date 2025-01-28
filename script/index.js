@@ -162,6 +162,7 @@ charitiesCards.forEach((item) => {
 });
 
 //functions for Charities modals opening and closing//
-charitiesImageBtn.addEventListener("click", () => {
+
+charitiesImageBtn.addEventListener("click", (modal) => {
   openModal(charitiesModal);
 });
