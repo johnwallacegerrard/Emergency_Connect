@@ -1,12 +1,7 @@
 .nav {
   border-bottom: 1px solid #eee;
-}
-.nav__logo_title {
-  color: red;
-  font-size: 25px;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 20px;
+  height: 100%; 
+  
 }
 .nav__logo {
   display: flex;
