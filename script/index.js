@@ -29,16 +29,14 @@ const charitiesImageBtn = document.querySelector(".charities__image-btn");
 const charitiesModal = document.querySelector("#charities-modal");
 
 //variables for donation section
-// this 'volunteerWork' needs be assigned in charity section
-// const volunteerWork = document.querySelector("#volunteer-work");
-
 const volunteerWorkModal = document.querySelector("#volunteer-work-modal");
 
 const donationForm = document.querySelector("#donation-form");
 const volunteerForm = volunteerWorkModal.querySelector("#volunteer-form");
 
-// the block name for this 'volunteerWorkBtn' needs to be assgin to the charity class
-// const volunteerWorkBtn = volunteerWork.querySelector(".charities__form-modal-open-btn")
+const volunteerWorkBtn = document.querySelector(
+  ".charities__form-modal-open-btn"
+);
 //global functions
 function handleEscape(evt) {
   if (evt.key === "Escape") {
@@ -100,8 +98,7 @@ function handleDonationFormSubmit(evt) {
 function handleVolunteerFormSubmit(evt) {
   evt.preventDefault();
 
-  const firstName = evt.target["first-name"].value;
-  const lastName = evt.target["last-name"].value;
+  const fullName = evt.target["full-name"].value;
   const age = evt.target["age"].value;
   const email = evt.target["email"].value;
   const phoneNumber = evt.target["phone-number"].value;
@@ -117,13 +114,13 @@ function handleVolunteerFormSubmit(evt) {
 
 //functions to bring up modals
 
-// volunteerWorkBtn.addEventListener("click", () => {
-//   resetValidation(volunteerForm, settings);
-//   openModal(volunteerWorkModal);
-// });
+volunteerWorkBtn.addEventListener("click", () => {
+  resetValidation(volunteerForm, settings);
+  openModal(volunteerWorkModal);
+});
 
 donationForm.addEventListener("submit", handleDonationFormSubmit);
-// volunteerForm.addEventListener("submit", handleVolunteerFormSubmit);
+volunteerForm.addEventListener("submit", handleVolunteerFormSubmit);
 
 //functions for Charities cards template and buttons//
 const charitiesCloseBtn = document.querySelector(".charities__modal-close-btn");

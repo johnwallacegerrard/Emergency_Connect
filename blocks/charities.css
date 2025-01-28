@@ -143,3 +143,24 @@
   opacity: 1;
   cursor: pointer;
 }
+
+.charities__form-modal-open-btn {
+  display: flex;
+  margin: 50px auto 0;
+  width: 200px;
+  height: 40px;
+  padding: 16px;
+  font-size: 20px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: rgb(255, 39, 39);
+  transition-duration: 0.3s;
+  color: #ffffff;
+}
+
+.charities__form-modal-open-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

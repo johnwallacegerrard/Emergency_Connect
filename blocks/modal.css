@@ -132,7 +132,7 @@
 
 .modal__button {
   border-radius: 4px;
-  background-color: #1878dc;
+  background-color: #18dc28;
   transition: background-color 0.5s linear;
   width: 100%;
   padding: 20px 0;
@@ -146,7 +146,7 @@
 }
 
 .modal__button:hover {
-  background-color: #3f96f3;
+  background-color: #3ff36c;
   cursor: pointer;
 }
 
