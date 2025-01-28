@@ -2,22 +2,22 @@ const charitiesCards = [
   {
     name: "American Red Cross",
     link: "images/redcross.svg",
-    text: "",
+    text: "The American Red Cross is an organization that specializes in natural disaster relief, blood donations, military and veteran assistance, and international volunteerism. Since 1881, their goal has been to work proactively to prevent suffering, and they respond to an average of 65,000 disasters a year (AMR). They also offer training and certifications for First Aid, CPR, AED, babysitting, lifeguarding, and more. Learn about how you can give back to communities and volunteer with the American Red Cross.",
   },
   {
     name: "The Salvation Army",
     link: "images/salvation.svg",
-    text: "",
+    text: "Since 1865, The Salvation Army has helped 27 million people in 135 countries around the world. This organization believes serving others is the core mission, whether that is with disaster relief, advocacy for those affected by trafficking, and services for all groups in society including the youth, elderly, military, veterans, and incarcerated. Find out how you can help volunteer with The Salvation Army.",
   },
   {
     name: "Team Rubicon",
     link: "images/rubicon.svg",
-    text: "",
+    text: "Team Rubicon was founded in 2010 by Jake Wood, a United States Marine Corps veteran who wanted to help those affected by the devastating earthquake in Haiti. Since then, Team Rubicon has been helping before, during, and after disasters happening around the world. Their goal is to build resilience in communities internationally, and they provide ways to volunteer with disaster relief, donation centers, building homes, cleaning affected areas, and providing medical services.",
   },
   {
     name: "Doctors Without Borders",
     link: "images/doctors.svg",
-    text: "",
+    text: "Doctors Without Borders has been providing emergency medical assistance internationally since 1971. Their goal is to provide medical aid based solely on need, and never any discriminatory factors. These are the people who are on the front lines of natural disasters and disease outbreaks. You can donate to Doctors Without Borders to help mobilize their medical teams effectively and efficiently to disaster relief areas, or bring awareness about the organization to your local area via speaker events, fundraisers, and chapters in schools or neighborhoods.",
   },
 ];
 
