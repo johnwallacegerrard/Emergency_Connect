@@ -112,7 +112,6 @@ function handleVolunteerFormSubmit(evt) {
   const age = evt.target["age"].value;
   const email = evt.target["email"].value;
   const phoneNumber = evt.target["phone-number"].value;
-  const address = evt.target["address"].value;
   const availability = evt.target["availability"].value;
 
   const buttonElement = evt.target.querySelector(".modal__button");
