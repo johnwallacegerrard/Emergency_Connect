@@ -90,7 +90,7 @@
   line-height: 17.6px;
 }
 
-.modal__submit-btn {
+/* .modal__submit-btn {
   width: 156px;
   height: 52px;
   padding: 18px 32px;
@@ -107,7 +107,7 @@
 .modal__submit-btn:hover {
   background: rgba(33, 33, 33, 0.8);
   cursor: pointer;
-}
+} */
 
 .modal__submit-btn_inactive {
   opacity: 50%;

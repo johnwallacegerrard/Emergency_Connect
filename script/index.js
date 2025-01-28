@@ -29,18 +29,16 @@ const charitiesImageBtn = document.querySelector(".charities__image-btn");
 const charitiesModal = document.querySelector("#charities-modal");
 
 //variables for donation section
-const cashDonation = document.querySelector("#cash-donation");
-const volunteerWork = document.querySelector("#volunteer-work");
+// this 'volunteerWork' needs be assigned in charity section
+// const volunteerWork = document.querySelector("#volunteer-work");
 
-const cashDonationModal = document.querySelector("#cash-donation-modal");
 const volunteerWorkModal = document.querySelector("#volunteer-work-modal");
 
-const donationForm = cashDonationModal.querySelector("#donation-form");
+const donationForm = document.querySelector("#donation-form");
 const volunteerForm = volunteerWorkModal.querySelector("#volunteer-form");
 
-const cashDonationBtn = cashDonation.querySelector(".donation__button");
-const volunteerWorkBtn = volunteerWork.querySelector(".donation__button");
-
+// the block name for this 'volunteerWorkBtn' needs to be assgin to the charity class
+// const volunteerWorkBtn = volunteerWork.querySelector(".charities__form-modal-open-btn")
 //global functions
 function handleEscape(evt) {
   if (evt.key === "Escape") {
@@ -70,7 +68,6 @@ closeButtons.forEach((button) => {
 // Grab the thank-you div from the DOM
 const thankYouMessage = document.getElementById("thankYouMessage");
 
-// Reusable function to display and fade out the message
 function showThankYouMessage(message) {
   thankYouMessage.textContent = message;
 
@@ -89,17 +86,13 @@ function showThankYouMessage(message) {
 function handleDonationFormSubmit(evt) {
   evt.preventDefault();
 
-  const firstName = evt.target["first-name"].value;
-  const lastName = evt.target["last-name"].value;
+  const fullName = evt.target["full-name"].value;
   const email = evt.target["email"].value;
-  const phoneNumber = evt.target["phone-number"].value;
-  const address = evt.target["address"].value;
   const donationAmount = evt.target["price"].value;
 
-  const buttonElement = evt.target.querySelector(".modal__button");
+  const buttonElement = evt.target.querySelector(".donation__button");
   disableButton(buttonElement, settings);
 
-  closeModal(cashDonationModal);
   evt.target.reset();
   showThankYouMessage("Thank you for your donation!");
 }
@@ -123,18 +116,14 @@ function handleVolunteerFormSubmit(evt) {
 }
 
 //functions to bring up modals
-cashDonationBtn.addEventListener("click", () => {
-  resetValidation(donationForm, settings);
-  openModal(cashDonationModal);
-});
 
-volunteerWorkBtn.addEventListener("click", () => {
-  resetValidation(volunteerForm, settings);
-  openModal(volunteerWorkModal);
-});
+// volunteerWorkBtn.addEventListener("click", () => {
+//   resetValidation(volunteerForm, settings);
+//   openModal(volunteerWorkModal);
+// });
 
 donationForm.addEventListener("submit", handleDonationFormSubmit);
-volunteerForm.addEventListener("submit", handleVolunteerFormSubmit);
+// volunteerForm.addEventListener("submit", handleVolunteerFormSubmit);
 
 //functions for Charities cards template and buttons//
 const charitiesCloseBtn = document.querySelector(".charities__modal-close-btn");

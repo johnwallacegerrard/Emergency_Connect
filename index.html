@@ -92,115 +92,51 @@
       <section class="donation" id="waystohelp">
         <h2 class="donation__title">Donations</h2>
         <h3 class="donation__subtitle">Helping Made Easy!</h3>
-        <ul class="donation__cards">
-          <li class="donation__card" id="cash-donation">
-            <h4 class="donation__caption-title">Monetary Donation</h4>
-            <p class="donation__caption">
-              You can send a donation as your way to help!
-            </p>
-            <button class="donation__button">Setup Donation</button>
-          </li>
-          <li class="donation__card" id="volunteer-work">
-            <h4 class="donation__caption-title">Volunteer</h4>
-            <p class="donation__caption">
-              You can sign up to volunteer and help with things like food and
-              water distribution and cleanup/debris removal.
-            </p>
-            <button class="donation__button">Schedule Here</button>
-          </li>
-        </ul>
-        <div class="modal" id="cash-donation-modal">
-          <div class="modal__container">
-            <button type="button" class="modal__close-btn">
-              <img src="./images/close-icon.svg" alt="close icon" />
-            </button>
-            <h2 class="modal__title">Monetary Donation</h2>
+        <form class="donation__form" id="donation-form" novalidate>
+          <label for="donation-full-name" class="donation__label"
+            >Full Name *
+            <input
+              type="text"
+              class="donation__input"
+              id="donation-full-name"
+              name="full-name"
+              placeholder="John Doe"
+              minlength="4"
+              required
+            />
+            <span class="donation__error" id="donation-full-name-error"></span>
+          </label>
 
-            <form class="modal__form" id="donation-form" novalidate>
-              <label for="donation-first-name" class="modal__label"
-                >First Name *
-                <input
-                  type="text"
-                  class="modal__input"
-                  id="donation-first-name"
-                  name="first-name"
-                  placeholder="John"
-                  minlength="2"
-                  required
-                />
-                <span
-                  class="modal__error"
-                  id="donation-first-name-error"
-                ></span>
-              </label>
-              <label for="donation-last-name" class="modal__label"
-                >Last Name *
-                <input
-                  type="text"
-                  class="modal__input"
-                  id="donation-last-name"
-                  name="last-name"
-                  placeholder="Doe"
-                  minlength="2"
-                  required
-                />
-                <span class="modal__error" id="donation-last-name-error"></span>
-              </label>
-              <label for="donation-email" class="modal__label"
-                >Your email *
-                <input
-                  type="email"
-                  class="modal__input"
-                  id="donation-email"
-                  name="email"
-                  placeholder="email@email.com"
-                  required
-                />
-                <span class="modal__error" id="donation-email-error"></span>
-              </label>
-              <label for="donation-phone-number" class="modal__label"
-                >Phone Number
-                <input
-                  type="tel"
-                  class="modal__input"
-                  id="donation-phone-number"
-                  name="phone-number"
-                  placeholder="123-456-7890"
-                />
-                <span
-                  class="modal__error"
-                  id="donation-phone-number-error"
-                ></span>
-              </label>
-              <label for="donation-address" class="modal__label"
-                >Address
-                <input
-                  type="text"
-                  class="modal__input"
-                  id="donation-address"
-                  name="address"
-                  placeholder="123 Donation Blvd."
-                />
-                <span class="modal__error" id="donation-address-error"></span>
-              </label>
-              <label for="donation-amount" class="modal__label"
-                >Donation Amount *
-                <input
-                  class="modal__input"
-                  id="donation-amount"
-                  name="price"
-                  type="number"
-                  step="0.01"
-                  min="1"
-                  placeholder="Enter amount"
-                  required
-                />
-                <span class="modal__error" id="donation-amount-error"></span>
-              </label>
-              <button type="submit" class="modal__button">Submit</button>
-            </form>
-          </div>
-        </div>
+          <label for="donation-email" class="donation__label"
+            >Your email *
+            <input
+              type="email"
+              class="donation__input"
+              id="donation-email"
+              name="email"
+              placeholder="email@email.com"
+              required
+            />
+            <span class="donation__error" id="donation-email-error"></span>
+          </label>
+
+          <label for="donation-amount" class="donation__label"
+            >Donation Amount *
+            <input
+              class="donation__input"
+              id="donation-amount"
+              name="price"
+              type="number"
+              step="0.01"
+              min="1"
+              placeholder="Enter amount"
+              required
+            />
+            <span class="donation__error" id="donation-amount-error"></span>
+          </label>
+          <button type="submit" class="donation__button">Submit</button>
+        </form>
+
         <div class="modal" id="volunteer-work-modal">
           <div class="modal__container">
             <button type="button" class="modal__close-btn">
@@ -302,6 +238,8 @@
             </form>
           </div>
         </div>
+        <!-- button to open volunteer modal needs block name -->
+        <!-- <button class="__form-modal-open-btn">Schedule Here</button> -->
       </section>
 
       <section class="charities" id="charities" class="charities__cards">

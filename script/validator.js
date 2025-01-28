@@ -1,10 +1,10 @@
 const settings = {
-  formSelector: ".modal__form",
-  inputSelector: ".modal__input",
-  submitButtonSelector: ".modal__button",
+  formSelector: ".donation__form, .modal__form",
+  inputSelector: ".donation__input, .modal__input",
+  submitButtonSelector: ".donation__button, .modal__button",
   inactiveButtonClass: "modal__submit-btn_inactive",
-  inputErrorClass: "modal__input_type_error",
-  errorClass: "modal__error_visible",
+  inputErrorClass: "input_type_error",
+  errorClass: "error_visible",
 };
 
 const showInputError = (formEl, inputElement, errorMsg, config) => {
