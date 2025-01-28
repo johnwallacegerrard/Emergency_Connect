@@ -54,7 +54,6 @@
 .prep__list li {
   margin: 16px 10px 8px;
 }
-
 @media screen and (max-width: 627px) {
   .prep__title {
     font-size: 24px;

@@ -1,11 +1,12 @@
 .charities {
-  padding: 100px;
+  padding: 40px 30px 40px;
+  height: 100%;
 }
 
 .charities__title {
   font-family: Merriweather, Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 25px;
   line-height: 1;
   text-align: center;
   padding-bottom: 25px;
@@ -14,43 +15,19 @@
 .charities__subtitle {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1;
   text-align: center;
   padding-bottom: 50px;
-}
-
-.charities__cards {
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .charities__cards-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  /*display: grid;
-  grid-template-columns: 250px 250px;
-  grid-template-rows: 250px 250px;
-  grid-gap: 25px 50px;*/
-}
-
-.charities__card {
-  width: 215px;
-  margin: 0;
-  background-color: white;
-  border-style: solid;
-  border-width: thin;
-  border-radius: 8px;
-  border-color: black;
-  box-shadow: 1px 1px 3px black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .charities__card-title {
@@ -60,9 +37,19 @@
   line-height: 1;
   padding: 10px 5px;
 }
-
+.charities__card {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px black;
+}
 .charities__card-image {
-  max-height: 175px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
@@ -142,4 +129,15 @@
 .charities__modal-close-btn:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+/* @media screen and (max-width: 1075px) {
+  .charities__cards-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+@media screen and (max-width: 550px) {
+  .charities__cards-list {
+    grid-template-columns: 1fr;
+  }
 }

@@ -98,8 +98,8 @@
 .footer__horizontal_line{ 
 margin-top: 30px; 
 }
-
-@media screen and (max-width: 627px) {
+/* 627 */
+@media screen and (max-width: 750px) { 
   .footer {
     margin: 12px 0 0;
     padding: 12px 0 0;

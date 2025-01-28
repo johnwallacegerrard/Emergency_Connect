@@ -1,7 +1,11 @@
 .header {
   height: 100vh;
+  width:100%; 
+  max-width: 100%; 
   background: url(../images/headerbg.jpg) no-repeat center center/cover;
   position: relative;
+  object-fit: cover;
+  padding:0; 
 }
 
 .header__top_emergency {
@@ -14,7 +18,7 @@
   line-height: 1;
   letter-spacing: 5px;
   word-spacing: 10px;
-  color: white; 
+  color: white;
 }
 
 .header__footer {
@@ -46,4 +50,20 @@
 }
 .header__footer:hover .header__footer_paragraph {
   display: block;
+}
+
+@media screen and (max-width:621px) {
+  .header__top_emergency {
+    font-size: 50px;
+    padding: 15px;
+    top: 30%;
+    left: 20%;
+  }
+
+ 
+}
+@media screen and ( max-width: 500px){ 
+  .header__top_emergency{ 
+    display:none; 
+  }
 }
