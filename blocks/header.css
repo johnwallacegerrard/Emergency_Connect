@@ -7,13 +7,14 @@
 .header__top_emergency {
   padding: 15px;
   top: 30%;
-  left: 20%;
+  left: 17%;
   position: absolute;
   font-family: "Merriweather", Arial, Helvetica, sans-serif;
   font-size: 72px;
   line-height: 1;
   letter-spacing: 5px;
   word-spacing: 10px;
+  color: white; 
 }
 
 .header__footer {
