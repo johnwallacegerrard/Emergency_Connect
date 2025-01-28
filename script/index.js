@@ -138,6 +138,8 @@ donationForm.addEventListener("submit", handleDonationFormSubmit);
 volunteerForm.addEventListener("submit", handleVolunteerFormSubmit);
 
 //functions for Charities cards template and buttons//
+const charitiesCloseBtn = document.querySelector(".charities__modal-close-btn");
+
 function getCardElement(data) {
   const cardElement = cardTemplate.content
     .querySelector(".charities__card")
@@ -148,6 +150,10 @@ function getCardElement(data) {
   const cardImageElement = cardElement.querySelector(".charities__card-image");
   cardImageElement.src = data.link;
   cardImageElement.alt = data.name;
+
+  cardImageElement.addEventListener("click", () => {
+    handleCharitiesModal(data);
+  });
 
   return cardElement;
 }
@@ -161,7 +167,19 @@ charitiesCards.forEach((item) => {
   renderCard(item, "append");
 });
 
-//functions for Charities modals opening and closing//
-charitiesImageBtn.addEventListener("click", () => {
+//function for Charities modal//
+function handleCharitiesModal(data) {
+  const modalTitleEl = document.querySelector(".charities__modal-title");
+  const modalImgEl = document.querySelector(".charities__modal-image");
+  const modalCaptionEl = document.querySelector(".charities__modal-caption");
+
+  modalTitleEl.textContent = data.name;
+  modalImgEl.src = data.link;
+  modalCaptionEl.textContent = data.text;
+
   openModal(charitiesModal);
+}
+
+charitiesCloseBtn.addEventListener("click", () => {
+  closeModal(charitiesModal);
 });
