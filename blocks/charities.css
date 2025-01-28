@@ -131,11 +131,11 @@
   cursor: pointer;
 }
 
-/* @media screen and (max-width: 1075px) {
+@media screen and (max-width: 1075px) {
   .charities__cards-list {
     grid-template-columns: repeat(2, 1fr);
   }
-} */
+}
 @media screen and (max-width: 550px) {
   .charities__cards-list {
     grid-template-columns: 1fr;
