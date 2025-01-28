@@ -18,3 +18,10 @@
   font-weight: 400;
   src: url("./fonts/Roboto-Regular.ttf");
 }
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/Merriweather-Bold.ttf");
+}

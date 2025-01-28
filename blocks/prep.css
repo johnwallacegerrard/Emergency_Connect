@@ -2,21 +2,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 100px;
+  background-color: #cccccc8a;
 }
 
 .prep__title {
   font-size: 50px;
   font-weight: 600;
   text-align: center;
+  margin: 0 0 20px;
+  padding; 0;
 }
 
 .prep__card {
-  margin: 40px 0;
+  margin: 20px 0;
   position: relative;
   width: 627px;
   padding: 10px;
   box-shadow: 1px 1px 3px black;
   border-radius: 8px;
+  background-color: #ffffff;
 }
 
 .prep__card-image {

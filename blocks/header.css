@@ -1,13 +1,19 @@
 .header {
   height: 100vh;
   background: url(../images/headerbg.jpg) no-repeat center center/cover;
-  position:relative; 
+  position: relative;
 }
+
 .header__top_emergency {
   padding: 15px;
-  top: 40%; 
-  left:50%; 
-  position:absolute; 
+  top: 30%;
+  left: 20%;
+  position: absolute;
+  font-family: "Merriweather", Arial, Helvetica, sans-serif;
+  font-size: 72px;
+  line-height: 1;
+  letter-spacing: 5px;
+  word-spacing: 10px;
 }
 
 .header__footer {
@@ -19,12 +25,15 @@
   position: absolute;
   right: 30%;
   top: 50%;
-  z-index: 1; 
+  z-index: 1;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1;
 }
 
 .header__footer:hover {
   transition: all 0.2s ease-in-out;
-  background: yellow;
+  background: rgb(0, 0, 0, 0.4);
   padding: 15px;
 }
 .header__footer_paragraph {
@@ -32,6 +41,7 @@
   width: 280px;
   display: none;
   padding-top: 15px;
+  color: #ffffff;
 }
 .header__footer:hover .header__footer_paragraph {
   display: block;

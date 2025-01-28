@@ -1,34 +1,41 @@
 .about {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding: 30px;
+  height: 100vh;
+  padding: 100px;
+  justify-content: center;
 }
 
 .about__image {
-  height: 480px;
-  width: 560px;
+  width: 50%;
   border-radius: 8px;
   display: block;
+  padding-right: 50px;
+  margin-top: 15px;
+  align-self: center;
 }
 
 .about__text-container {
   border-bottom: 12px solid black;
   border-top: 12px solid black;
+  height: fit-content;
+  margin-top: 15px;
+  align-self: center;
 }
 
 .about__title {
-  font-family: "poppins", Arial, Helvetica, sans-serif;
+  font-family: "Merriweather", Arial, Helvetica, sans-serif;
   margin: 20px 0 0;
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 600;
   text-align: center;
 }
+
 .about__description {
-  font-family: "roboto", Arial, Helvetica, sans-serif;
-  text-indent: 16px;
-  font-size: 16px;
-  line-height: 26px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.75;
   max-width: 500px;
-  margin: 20px auto 10px;
+  margin: 10px auto 20px;
+  text-align: center;
 }

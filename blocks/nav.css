@@ -1,9 +1,9 @@
 .nav {
-  height: 100%;
-  width: 100%; 
-  position:fixed; 
-  top: 0; 
-  z-index: 1; 
+  /*height: 100%;*/
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 .nav__logo {
   display: flex;
@@ -13,17 +13,20 @@
   background: #fff;
 }
 .nav__links {
-  height: 60px; 
-  background:rgb(231, 74, 74); 
+  height: 60px;
+  background: rgb(231, 74, 74);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-size: 20px;
   text-transform: uppercase;
 }
 .nav__link a {
   text-decoration: none;
   color: #fff;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1;
 }
 .nav li {
   list-style: none;
@@ -35,6 +38,6 @@
 }
 .nav__link:hover {
   transition: all 0.5s ease-out;
-  background:rgb(194, 70, 70);
+  background: rgb(194, 70, 70);
   border-radius: 20px;
 }
