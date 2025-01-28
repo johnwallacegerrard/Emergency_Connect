@@ -1,7 +1,8 @@
 .donation {
-  padding: 100px 75px;
+  /* padding: 100px 75px; */
+  padding:20px 30px; 
   background-color: #cccccc8a;
-  height: 90vh;
+  height: 100vh;
 }
 
 .donation__title {

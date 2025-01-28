@@ -1,11 +1,11 @@
 .header {
   height: 100vh;
-  width:100%; 
-  max-width: 100%; 
+  width: 100%;
+  max-width: 100%;
   background: url(../images/headerbg.jpg) no-repeat center center/cover;
   position: relative;
   object-fit: cover;
-  padding:0; 
+  padding: 0;
 }
 
 .header__top_emergency {
@@ -30,7 +30,6 @@
   position: absolute;
   right: 30%;
   top: 50%;
-  z-index: 1;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1;
@@ -52,18 +51,27 @@
   display: block;
 }
 
-@media screen and (max-width:621px) {
+@media screen and (max-width: 621px) {
   .header__top_emergency {
     font-size: 50px;
     padding: 15px;
     top: 30%;
     left: 20%;
   }
-
- 
 }
-@media screen and ( max-width: 500px){ 
-  .header__top_emergency{ 
-    display:none; 
+@media screen and (max-width: 500px) {
+  .header__top_emergency {
+    font-size: 40px;
+    padding: 15px;
+    top: 30%;
+    left: 8%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .header__top_emergency {
+    font-size: 25px;
+    padding: 15px;
+    top: 30%;
+    left: 7%;
   }
 }
