@@ -20,14 +20,14 @@
 .about__title {
   font-family: "poppins", Arial, Helvetica, sans-serif;
   margin: 20px 0 0;
-  font-size: 44px;
+  font-size: 32px;
   font-weight: 600;
   text-align: center;
 }
 .about__description {
   font-family: "roboto", Arial, Helvetica, sans-serif;
   text-indent: 16px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 26px;
   max-width: 500px;
   margin: 20px auto 10px;

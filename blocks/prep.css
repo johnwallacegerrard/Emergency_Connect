@@ -49,3 +49,41 @@
 .prep__list li {
   margin: 16px 10px 8px;
 }
+
+@media screen and (max-width: 627px) {
+  .prep__title {
+    font-size: 24px;
+  }
+
+  .prep__card {
+    margin: 20px 0 0;
+    width: 288px;
+    padding: 4px;
+  }
+
+  .prep__card-image {
+    height: 24px;
+    width: 24px;
+    margin-right: 12px;
+  }
+
+  .prep__card-title {
+    font-size: 18px;
+    border-bottom: 2px solid red;
+  }
+
+  .prep__card-description {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .prep__list {
+    width: 240px;
+    margin: 10px auto;
+    font-size: 14px;
+  }
+
+  .prep__list li {
+    margin: 8px 6px 4px;
+  }
+}
