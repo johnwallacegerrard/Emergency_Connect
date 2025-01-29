@@ -7,7 +7,7 @@
 .donation__content {
   display: flex;
   flex: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -66,22 +66,8 @@
   width: 300px;
   height: 340px;
   border-radius: 8px;
+  margin-left: 80px;
 }
-
-/* .charities__form-modal-open-btn {
-  margin-top: auto;
-  width: 200px;
-  height: 40px;
-  padding: 0;
-  font-size: 24px;
-  border-radius: 8px;
-  transition-duration: 0.3s;
-}
-
-.charities__form-modal-open-btn:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-} */
 
 .donation__form {
   max-width: 630px;
@@ -165,6 +151,7 @@
   .donation__cash-app {
     height: 288px;
     width: 260px;
+    margin: 0;
   }
   .donation__title {
     font-size: 24px;

@@ -1,7 +1,7 @@
 .header {
   height: 100vh;
   width: 100%;
-  max-width: 100%; 
+  max-width: 100%;
   background: url(../images/headerbg.jpg) no-repeat center center/cover;
   position: relative;
   object-fit: cover;
@@ -18,7 +18,7 @@
   line-height: 1;
   letter-spacing: 5px;
   word-spacing: 10px;
-  color: white;
+  color: black;
 }
 
 .header__footer {
@@ -28,8 +28,8 @@
   overflow: hidden;
   cursor: pointer;
   position: absolute;
-  right: 30%;
-  top: 50%;
+  right: 20%;
+  bottom: 15%;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1;
@@ -60,8 +60,8 @@
   }
 }
 @media screen and (max-width: 500px) {
-  .header{ 
-    height: 60vh; 
+  .header {
+    height: 60vh;
   }
   .header__top_emergency {
     font-size: 40px;

@@ -1,6 +1,5 @@
 .charities {
   padding: 40px 30px 40px;
-
   width: 100%;
 }
 
@@ -73,6 +72,7 @@
   justify-content: center;
   align-items: center;
   visibility: hidden;
+  z-index: 3;
 }
 
 .charities__modal-container {
@@ -84,8 +84,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  min-width: 288px;
   max-width: 60%;
-  max-height: 50%;
 }
 
 .charities__modal-section {
@@ -99,7 +99,6 @@
 }
 
 .charities__modal-image {
-  max-width: 200px;
   object-fit: contain;
   border-radius: 8px;
   margin: 0;
@@ -172,14 +171,35 @@
     margin-bottom: 10px;
   }
   .charities__title {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 10px;
   }
   .charities__subtitle {
     font-size: 18px;
     margin-bottom: 10px;
   }
+  .charities__modal-container {
+    flex-direction: column;
+    width: 288px;
+  }
+
+  .charities__modal-section {
+    padding: 4px;
+  }
+  .charities__modal-title {
+    font-size: 16px;
+    width: 260px;
+  }
+  .charities__modal-caption {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
   .charities__form-modal-open-btn {
     margin: 5px auto;
+  }
+  .charities__modal-close-btn {
+    top: 0px;
+    right: 0px;
   }
 }
