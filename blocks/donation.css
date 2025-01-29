@@ -90,6 +90,7 @@
   border-radius: 8px;
   display: block;
   width: 100%;
+  max-width: 300px;
   padding: 16px 12px;
   box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.4);
@@ -115,6 +116,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 17.6px;
+  max-width: 300px;
 }
 
 .donation__button {
@@ -122,6 +124,7 @@
   background-color: #18dc28;
   transition: background-color 0.5s linear;
   width: 100%;
+  max-width: 300px;
   padding: 20px 0;
   border: none;
   margin-bottom: 24px;
