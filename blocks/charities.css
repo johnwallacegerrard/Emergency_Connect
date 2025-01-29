@@ -1,6 +1,6 @@
 .charities {
   padding: 40px 30px 40px;
-  height: 100vh;
+
   width: 100%;
 }
 
@@ -10,7 +10,7 @@
   font-size: 30px;
   line-height: 1;
   text-align: center;
-  padding: 20px 0 ;
+  padding: 20px 0;
 }
 
 .charities__subtitle {
@@ -23,7 +23,7 @@
 
 .charities__cards-list {
   list-style-type: none;
-  padding: 40px; ;
+  padding: 40px;
   margin: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -163,22 +163,23 @@
   }
 }
 @media screen and (max-width: 602px) {
-  .charities{ 
-    padding: 30px; 
+  .charities {
+    padding: 30px;
   }
-  .charities__title,  .charities__cards-list{ 
-    padding:0; 
-    
-  } 
-  .charities__title{ 
-    font-size: 22px; 
+  .charities__title,
+  .charities__cards-list {
+    padding: 0;
+    margin-bottom: 10px;
   }
-  .charities__subtitle{ 
-    font-size: 18px; 
+  .charities__title {
+    font-size: 22px;
+    margin-bottom: 10px;
   }
-  .charities__form-modal-open-btn{ 
-    margin: 5px auto; 
+  .charities__subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
   }
-
- 
+  .charities__form-modal-open-btn {
+    margin: 5px auto;
+  }
 }

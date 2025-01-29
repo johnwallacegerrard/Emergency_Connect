@@ -156,3 +156,38 @@
   cursor: default;
   opacity: 50%;
 }
+
+@media screen and (max-width: 627px) {
+  .modal__container {
+    padding: 8px;
+    width: 288px;
+  }
+
+  .modal__title {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .modal__label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .modal__input {
+    padding: 8px 4px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .modal__error {
+    font-size: 12px;
+    line-height: 13.2px;
+  }
+
+  .modal__close-btn {
+    top: 0px;
+    right: 0px;
+  }
+}
