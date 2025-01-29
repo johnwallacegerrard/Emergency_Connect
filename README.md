@@ -55,6 +55,6 @@ https://johnwallacegerrard.github.io/Emergency_Connect/
 <img width="1257" alt="preppage" src="https://github.com/user-attachments/assets/fe43db71-4012-4294-8c19-ad4864b08abc" />
 7. Footer Desktop View
 <img width="1259" alt="footer" src="https://github.com/user-attachments/assets/96358a79-3b23-4321-baf2-0fc9f2d2e7fa" />
-8 & 9. Home Page and Donations Form Responsive Views \
+8 & 9. Home Page and Donations Form Responsive Views  
 <img width="485" alt="responsivehome" src="https://github.com/user-attachments/assets/cbd28d79-3cea-49b6-9661-8d7aeef893be" />
 <img width="480" alt="responsiveform" src="https://github.com/user-attachments/assets/aee29acf-b762-443d-be88-38d1e83a85d3" />
