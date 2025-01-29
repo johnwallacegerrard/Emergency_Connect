@@ -41,11 +41,11 @@ https://github.com/johnwallacegerrard/Emergency_Connect
 https://johnwallacegerrard.github.io/Emergency_Connect/
 
 **Images**
-! [About Page Desktop View] (/images/README images/aboutpage.png)
-! [Donation Page Desktop View] (/images/README images/donationspage.png)
-! [Charities Page Desktop View] (/images/README images/charitiespage.png)
-! [Charities Modal Desktop View] (/images/README images/charitiesmodal.png)
-! [Preparedness Page Desktop View] (/images/README images/preppage.png)
-! [Footer Desktop View] (images/README images/footer.png)
-! [Home Page Responsive View] (images/README images/responsivehome.png)
-! [Volunteer Form Responsive View] (images/README images/responsiveform.png)
+! [About Page Desktop View] (./images/README images/aboutpage.png)
+! [Donation Page Desktop View] (./images/README images/donationspage.png)
+! [Charities Page Desktop View] (./images/README images/charitiespage.png)
+! [Charities Modal Desktop View] (./images/README images/charitiesmodal.png)
+! [Preparedness Page Desktop View] (./images/README images/preppage.png)
+! [Footer Desktop View] (./images/README images/footer.png)
+! [Home Page Responsive View] (./images/README images/responsivehome.png)
+! [Volunteer Form Responsive View] (./images/README images/responsiveform.png)
