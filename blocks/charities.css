@@ -7,24 +7,24 @@
 .charities__title {
   font-family: Merriweather, Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 1;
   text-align: center;
-  padding-bottom: 25px;
+  padding: 25px 0 ;
 }
 
 .charities__subtitle {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1;
   text-align: center;
-  padding-bottom: 20px;
+  padding: 20px 0 ; 
 }
 
 .charities__cards-list {
   list-style-type: none;
-  padding: 0;
+  padding: 60px; ;
   margin: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -162,4 +162,24 @@
   .charities__cards-list {
     grid-template-columns: 1fr;
   }
+}
+@media screen and (max-width: 602px) {
+  .charities{ 
+    padding: 30px; 
+  }
+  .charities__title,  .charities__cards-list{ 
+    padding:0; 
+    
+  } 
+  .charities__title{ 
+    font-size: 22px; 
+  }
+  .charities__subtitle{ 
+    font-size: 18px; 
+  }
+  .charities__form-modal-open-btn{ 
+    margin: 5px auto; 
+  }
+
+ 
 }
